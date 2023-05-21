@@ -1,0 +1,7 @@
+(class main
+    (field int x 5)
+    (field string name "bob")
+    (method void main ()
+        (set x name)
+    )
+)

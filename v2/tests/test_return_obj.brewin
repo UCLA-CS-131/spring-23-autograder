@@ -1,0 +1,29 @@
+(class person
+    (field string name "")
+    (field int age 0)
+    (method person init ((string s) (int x))
+        (begin
+            (set name s)
+            (set age x)
+            (return me)
+        )
+    )
+    (method int get_age ()
+        (return age)
+    )
+    (method string get_name ()
+        (return name)
+    )
+)
+
+(class main
+    (field person p null)
+    (method void main ()
+        (begin
+            (set p (new person))
+            (set p (call p init "bob" 5))
+            (print (call p get_age))
+            (print (call p get_name))
+        )
+    )
+)

@@ -1,0 +1,18 @@
+(class main
+    (field int x 10)
+    (field string s "hello")
+    (field bool cond true)
+    (method void main ()
+        (begin
+            (print x)
+            (set x 5)
+            (print x)
+            (print s)
+            (set s "world")
+            (print s)
+            (print cond)
+            (set cond false)
+            (print cond)
+        )
+    )
+)

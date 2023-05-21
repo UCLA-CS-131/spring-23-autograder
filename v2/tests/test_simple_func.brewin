@@ -1,0 +1,13 @@
+(class main
+    (field bool cond true)
+    (method void foo ((int x) (string s) (bool c))
+        (begin
+            (print x)
+            (print s)
+            (print c)
+        )
+    )
+    (method void main ()
+        (call me foo 5 "hello" cond)
+    )
+)
