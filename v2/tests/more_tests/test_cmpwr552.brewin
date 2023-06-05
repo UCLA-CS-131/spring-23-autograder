@@ -1,3 +1,7 @@
+#note: the spec does not require you pass this test case because mammal
+#a class defined after it. It is useful to demonstrate the use of "return me"
+#and dynamic dispatch
+
 (class mammal (method person get_me () (return me))
 )
 
